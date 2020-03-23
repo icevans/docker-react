@@ -1,0 +1,8 @@
+# Ignore project dependencies
+node_modules
+
+# Ignore source control
+.git
+
+# Ignore local junk
+.DS_Store
