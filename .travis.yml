@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t dricevans/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true dricevans/docker-react yarn test
